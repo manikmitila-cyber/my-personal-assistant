@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "আমার সহকারী",
+    "slug": "my-personal-assistant",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "package": "com.mypersonalassistant.app",
+      "permissions": [
+        "POST_NOTIFICATIONS",
+        "SCHEDULE_EXACT_ALARM",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-sqlite",
+      [
+        "expo-notifications",
+        {
+          "color": "#7B5CFA"
+        }
+      ],
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "ভয়েস ইনপুটের জন্য মাইক্রোফোন প্রয়োজন",
+          "speechRecognitionPermission": "ভয়েস ইনপুটের জন্য স্পিচ রিকগনিশন প্রয়োজন"
+        }
+      ]
+    ]
+  }
+}
